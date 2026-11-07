@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html>
 
 <head>
   <meta charset="utf-8">
-  <title>Texture Mapping</title>
+  <title>Exhibit of Oddities (Blinking Orb, Infinite Snake, Weird Fang)</title>
   <style>
     body { background: #111; color: #ccc; font-family: monospace; }
     canvas { border: 1px solid #444; }
@@ -25,7 +26,7 @@
 </head>
 
 <body>
-  <h2>HW 6 Texture Mapping</h2>
+  <h2>Exhibit of Oddities - HW 6 Texture Mapping</h2>
 
   <p>Edit the shaders on the left; the canvas updates as you type.<br>
     Drag with the mouse to rotate the models.<br>
@@ -62,6 +63,20 @@
           </select>
           <button id="spinButton">Start/Stop Rotation</button>
         </div>
+
+        <!-- spotlight controls -->
+        <div class="control-row">
+          <label>Spotlights:</label>
+          <label>
+            <input type="checkbox" class="light-toggle" data-light="0" checked> Purple
+          </label>
+          <label>
+            <input type="checkbox" class="light-toggle" data-light="1" checked>Blue
+          </label>
+          <label>
+            <input type="checkbox" class="light-toggle" data-light="2" checked>Amber
+          </label>
+        </div>
       </div>
     </div>
   </div>
@@ -72,3 +87,4 @@
 </body>
 
 </html>
+
